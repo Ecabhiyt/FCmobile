@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Players</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke; 
+        }
+
+        header {
+            background-color: #4CAF50; 
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        #players-list {
+            list-style: none;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .player-card {
+            width: 200px;
+            margin: 10px;
+            border: 1px solid grey;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .player-card:hover {
+            transform: scale(1.05);
+        }
+
+        .player-info {
+            padding: 10px;
+        }
+
+        .player-name {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .player-country {
+            color: #555;
+        }
+
+        .player-salary,
+        .player-age,
+        .player-trophies,
+        .player-club {
+            margin-top: 5px;
+            font-weight: bold;
+        }        
+        
+        button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+.green-button {
+    background-color: #4CAF50; 
+}
+
+
+.green-button:hover {
+    animation: pulse 3s ease-in-out infinite;
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Football Players</h1>
+    </header>
+    <a href="./index.html"> <button class="green-button" >BACK</button></a> 
+
+    <ul id="players-list">
+        
+        <li class="player-card">
+            <img src="./images/Lionel Messi.jpeg" alt="Player 1">
+            <div class="player-info">
+                <h3 class="player-name">Lionel Messi</h3>
+                <p class="player-country">Argentina</p>
+                <p class="player-salary">Salary: $92 million</p>
+                <p class="player-age">Age: 34</p>
+                <p class="player-trophies">Trophies: 30</p>
+                <p class="player-club">Club: Paris Saint-Germain</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Cristiano Ronaldo.jpeg" alt="Player 2">
+            <div class="player-info">
+                <h3 class="player-name">Cristiano Ronaldo</h3>
+                <p class="player-country">Portugal</p>
+                <p class="player-salary">Salary: $70 million</p>
+                <p class="player-age">Age: 36</p>
+                <p class="player-trophies">Trophies: 34</p>
+                <p class="player-club">Club: Manchester United</p>
+            </div>
+        </li>
+        
+        
+        <li class="player-card">
+            <img src="./images/Neymar Jr..jpeg" alt="Player 3">
+            <div class="player-info">
+                <h3 class="player-name">Neymar Jr.</h3>
+                <p class="player-country">Brazil</p>
+                <p class="player-salary">Salary: $78 million</p>
+                <p class="player-age">Age: 29</p>
+                <p class="player-trophies">Trophies: 15</p>
+                <p class="player-club">Club: Paris Saint-Germain</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Kylian Mbappe.jpeg" alt="Player 4">
+            <div class="player-info">
+                <h3 class="player-name">Kylian Mbappe</h3>
+                <p class="player-country">France</p>
+                <p class="player-salary">Salary: $21 million</p>
+                <p class="player-age">Age: 23</p>
+                <p class="player-trophies">Trophies: 10</p>
+                <p class="player-club">Club: Paris Saint-Germain</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Mohamed Salah.jpeg" alt="Player 5">
+            <div class="player-info">
+                <h3 class="player-name">Mohamed Salah</h3>
+                <p class="player-country">Egypt</p>
+                <p class="player-salary">Salary: $23 million</p>
+                <p class="player-age">Age: 29</p>
+                <p class="player-trophies">Trophies: 10</p>
+                <p class="player-club">Club: Liverpool</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Harry Kane.jpeg" alt="Player 6">
+            <div class="player-info">
+                <h3 class="player-name">Harry Kane</h3>
+                <p class="player-country">England</p>
+                <p class="player-salary">Salary: $20 million</p>
+                <p class="player-age">Age: 28</p>
+                <p class="player-trophies">Trophies: 5</p>
+                <p class="player-club">Club: Tottenham Hotspur</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Kevin De Bruyne.jpeg" alt="Player 7">
+            <div class="player-info">
+                <h3 class="player-name">Kevin De Bruyne</h3>
+                <p class="player-country">Belgium</p>
+                <p class="player-salary">Salary: $20 million</p>
+                <p class="player-age">Age: 30</p>
+                <p class="player-trophies">Trophies: 8</p>
+                <p class="player-club">Club: Manchester City</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Robert Lewandowski.jpeg" alt="Player 8">
+            <div class="player-info">
+                <h3 class="player-name">Robert Lewandowski</h3>
+                <p class="player-country">Poland</p>
+                <p class="player-salary">Salary: $24 million</p>
+                <p class="player-age">Age: 33</p>
+                <p class="player-trophies">Trophies: 12</p>
+                <p class="player-club">Club: Bayern Munich</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Sadio Mane.jpeg" alt="Player 9">
+            <div class="player-info">
+                <h3 class="player-name">Sadio Mane</h3>
+                <p class="player-country">Senegal</p>
+                <p class="player-salary">Salary: $15 million</p>
+                <p class="player-age">Age: 29</p>
+                <p class="player-trophies">Trophies: 8</p>
+                <p class="player-club">Club: Liverpool</p>
+            </div>
+        </li>
+
+        
+        <li class="player-card">
+            <img src="./images/Luka Modric.jpeg" alt="Player 10">
+            <div class="player-info">
+                <h3 class="player-name">Luka Modric</h3>
+                <p class="player-country">Croatia</p>
+                <p class="player-salary">Salary: $12 million</p>
+                <p class="player-age">Age: 36</p>
+                <p class="player-trophies">Trophies: 15</p>
+                <p class="player-club">Club: Real Madrid</p>
+            </div>
+        </li>
+    </ul>
+</body>
+
+</html>
